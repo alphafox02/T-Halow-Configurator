@@ -1,4 +1,3 @@
-
 # T-Halow Configurator
 
 **T-Halow Configurator** is a command-line tool designed to interact with and configure LilyGO T-Halow devices over a serial connection. The tool allows users to send AT commands and receive device responses while handling continuous status updates without interrupting user input.
@@ -52,8 +51,21 @@ python3 t_halow_configurator.py --port /dev/ttyUSB0
 
 The T-Halow Configurator supports all standard AT commands for configuring T-Halow devices. Examples include:
 
+- `AT+MODE=ap/sta/group/apsta` - Set the working mode
+- `AT+SSID=ssid_char` - Set the SSID
+- `AT+KEYMGMT=WPA-PSK/NONE` - Set encryption mode
+- `AT+PSK=psk_char` - Set encryption password
+- `AT+PAIR=0/1` - Pairing control
+- `AT+BSS_BW=1/2/4/8` - Set BSS bandwidth
+- `AT+FREQ_RANGE=start,end` - Set working frequency range
+- `AT+CHAN_LIST=freq1,freq2` - Set working channel list
+- `AT+RSSI?` - Check RSSI (signal quality)
+- `AT+CONN_STATE` - Check connection state
+- `AT+TXPOWER=txpower` - Set max transmit power
+- `AT+ACKTMO=timeout` - Set ACK timeout
+- `AT+HEART_INT=interval` - Set heartbeat interval
 - `AT+SYSDBG=LMAC,0` - Debug low-level MAC layer
-- `AT+WNBCFG=LMAC,0` - 
+- `AT+JOINGROUP=group_addr,AID` - Join a multicast group
 
 ## Troubleshooting
 
