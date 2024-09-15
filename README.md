@@ -57,7 +57,7 @@ The T-Halow Configurator supports all standard AT commands for configuring T-Hal
 
 ## Troubleshooting
 
-- **Device Not Found**: Ensure the correct serial port is specified (e.g., `/dev/ttyUSB0` for Linux or `COM3` for Windows).
+- **Device Not Found**: Ensure the correct serial port is specified (e.g., `/dev/ttyUSB0` for Linux).
 - **No Response to Commands**: Make sure the device is properly connected and powered on.
 
 ---
